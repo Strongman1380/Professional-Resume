@@ -71,15 +71,15 @@
     --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
     
-    /* Dark Mode Colors */
+    /* Light Mode Colors */
     --bg-primary: #ffffff;
-    --bg-secondary: #f8fafc;
-    --bg-tertiary: #f1f5f9;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --text-muted: #94a3b8;
-    --border-color: #e2e8f0;
-    --card-bg: rgba(255, 255, 255, 0.8);
+    --bg-secondary: #f0f6ff;
+    --bg-tertiary: #e4eeff;
+    --text-primary: #0a1628;
+    --text-secondary: #3d526b;
+    --text-muted: #7a92b0;
+    --border-color: #d0dff5;
+    --card-bg: rgba(255, 255, 255, 0.97);
 }
 
 [data-theme="dark"] {
@@ -200,7 +200,26 @@ a:hover {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     box-shadow: var(--shadow-md);
+    border-bottom: 1px solid var(--border-color);
     padding: 12px 0;
+}
+
+[data-theme="dark"] .navbar.scrolled {
+    background: rgba(10, 16, 35, 0.96);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.25);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .navbar-brand {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .navbar-link {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .navbar-toggle span {
+    background: #cbd5e1;
 }
 
 .navbar .container {
