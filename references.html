@@ -5,189 +5,444 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional references for Brandon Hinrichs - IT consultant, software developer, behavioral health professional">
     <meta name="keywords" content="IT consultant, software developer, behavioral health, Brandon Hinrichs references">
-    <title>Brandon Hinrichs | Professional References</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>References | Brandon Hinrichs</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <h1><i class="fas fa-users"></i> PROFESSIONAL REFERENCES</h1>
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-user-tie"></i>
+                <span>Brandon Hinrichs</span>
+            </a>
+            
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html" class="navbar-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="workhistory.html" class="navbar-link"><i class="fas fa-briefcase"></i> Work</a></li>
+                <li><a href="Educationcertifications.html" class="navbar-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="portfolio.html" class="navbar-link"><i class="fas fa-project-diagram"></i> Portfolio</a></li>
+                <li><a href="references.html" class="navbar-link active"><i class="fas fa-users"></i> References</a></li>
+                <li><a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank" class="navbar-link"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+            
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-    </header>
-
-    <nav class="minimal-nav">
-        <ul class="nav-links">
-            <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="workhistory.html" class="nav-link"><i class="fas fa-briefcase"></i> Work History</a></li>
-            <li><a href="Educationcertifications.html" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
-            <li><a href="portfolio.html" class="nav-link"><i class="fas fa-project-diagram"></i> Portfolio</a></li>
-            <li><a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank" class="nav-link"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://github.com/Strongman1380" target="_blank" class="nav-link"><i class="fab fa-github"></i> GitHub</a></li>
-        </ul>
     </nav>
 
-    <main class="container">
-        <p class="text-center" style="background-color: rgba(255, 255, 255, 0.7); padding: 10px; border-radius: 5px; margin-bottom: 30px;">
-            The following professionals can attest to my skills, work ethic, and character. Please contact them for references.
-        </p>
-
-        <section class="references">
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th><i class="fas fa-user-tie"></i> Name</th>
-                            <th><i class="fas fa-briefcase"></i> Position</th>
-                            <th><i class="fas fa-building"></i> Organization</th>
-                            <th><i class="fas fa-envelope"></i> Email</th>
-                            <th><i class="fas fa-phone"></i> Phone</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Chris Reece</td>
-                            <td>Problem-Solving Court Coordinator</td>
-                            <td>Nebraska Judicial Branch</td>
-                            <td class="contact-info"><a href="mailto:chris.reece@nejudicialbranch.gov">chris.reece@nejudicialbranch.gov</a></td>
-                            <td class="contact-info"><a href="tel:4022397461">402-239-7461</a></td>
-                        </tr>
-                        <tr>
-                            <td>Katherine Rea</td>
-                            <td>Specialized Populations Officer</td>
-                            <td>Nebraska Judicial Branch</td>
-                            <td class="contact-info"><a href="mailto:katherine.rea@nejudicialbranch.gov">katherine.rea@nejudicialbranch.gov</a></td>
-                            <td class="contact-info"><a href="tel:4023102430">402-310-2430</a></td>
-                        </tr>
-                        <tr>
-                            <td>Brandi Baldisanno</td>
-                            <td>Specialized Populations Officer</td>
-                            <td>Nebraska Judicial Branch</td>
-                            <td class="contact-info"><a href="mailto:brandi.baldisanno@nejudicialbranch.gov">brandi.baldisanno@nejudicialbranch.gov</a></td>
-                            <td class="contact-info"><a href="tel:4028758999">402-875-8999</a></td>
-                        </tr>
-                        <tr>
-                            <td>Brandi Nice</td>
-                            <td>Northern Service Area Director</td>
-                            <td>State of Nebraska</td>
-                            <td class="contact-info"><a href="mailto:brandi.nice@nebraska.gov">brandi.nice@nebraska.gov</a></td>
-                            <td class="contact-info"><a href="tel:4028758999">402-875-8999</a></td>
-                        </tr>
-                        <tr>
-                            <td>Linda Caster Senff</td>
-                            <td>Retired County Judge</td>
-                            <td>York/Hamilton County</td>
-                            <td>Not available</td>
-                            <td class="contact-info"><a href="tel:4023624925">402-362-4925</a></td>
-                        </tr>
-                        <tr>
-                            <td>Michelle Lemke</td>
-                            <td>Therapist</td>
-                            <td>Lemke-Michels Psychotherapy</td>
-                            <td class="contact-info"><a href="mailto:michelle@lemke-michelspsychotherapy.com">michelle@lemke-michelspsychotherapy.com</a></td>
-                            <td class="contact-info"><a href="tel:4027595276">402-759-5276</a></td>
-                        </tr>
-                        <tr>
-                            <td>Cindy Betka</td>
-                            <td>Therapist</td>
-                            <td>Grand Island Mental Health Center</td>
-                            <td class="contact-info"><a href="mailto:cindy@gimhmc.com">cindy@gimhmc.com</a></td>
-                            <td class="contact-info"><a href="tel:4028795959">402-879-5959</a></td>
-                        </tr>
-                        <tr>
-                            <td>Dameon Gilifian</td>
-                            <td>Owner</td>
-                            <td>Alcohol and Drug Solutions</td>
-                            <td class="contact-info"><a href="mailto:alcoholanddrugsolutions@gmail.com">alcoholanddrugsolutions@gmail.com</a></td>
-                            <td class="contact-info"><a href="tel:4026014289">402-601-4289</a></td>
-                        </tr>
-                        <tr>
-                            <td>Jodi Gilifian</td>
-                            <td>Owner</td>
-                            <td>Alcohol and Drug Solutions</td>
-                            <td class="contact-info"><a href="mailto:alcoholanddrugsolutions@gmail.com">alcoholanddrugsolutions@gmail.com</a></td>
-                            <td class="contact-info"><a href="tel:4026014289">402-601-4289</a></td>
-                        </tr>
-                        <tr>
-                            <td>Tanya Oswald</td>
-                            <td>Director</td>
-                            <td>Sunrise Place</td>
-                            <td class="contact-info"><a href="mailto:toswald@4bhs.org">toswald@4bhs.org</a></td>
-                            <td class="contact-info"><a href="tel:4025649994">402-564-9994</a></td>
-                        </tr>
-                        <tr>
-                            <td>Brian Samek</td>
-                            <td>Director</td>
-                            <td>Seekers of Serenity Place</td>
-                            <td class="contact-info"><a href="mailto:bsamek@4bhs.org">bsamek@4bhs.org</a></td>
-                            <td class="contact-info"><a href="tel:4028795959">402-879-5959</a></td>
-                        </tr>
-                        <tr>
-                            <td>Ryan Schroetlin</td>
-                            <td>Director</td>
-                            <td>Heartland Boys Home</td>
-                            <td>Not available</td>
-                            <td class="contact-info"><a href="tel:4027591910">402-759-1910</a></td>
-                        </tr>
-                        <tr>
-                            <td>Ed Young</td>
-                            <td>Executive Director</td>
-                            <td>Heartland Boys Home</td>
-                            <td>Not available</td>
-                            <td class="contact-info"><a href="tel:4029816569">402-981-6569</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 40vh; padding-top: 120px;">
+        <div class="container" style="text-align: center;">
+            <div class="hero-badge" style="margin-bottom: 24px;">
+                <i class="fas fa-users"></i>
+                <span>Professional Network</span>
             </div>
-        </section>
+            <h1 class="hero-title" style="margin-bottom: 20px;">
+                Professional <span>References</span>
+            </h1>
+            <p class="hero-subtitle" style="max-width: 700px; margin: 0 auto;">
+                Colleagues and supervisors who can attest to my skills, work ethic, 
+                and professional character across IT and human services domains
+            </p>
+        </div>
+    </section>
 
-        <div class="space"></div>
-
-        <section class="reference-note">
-            <div style="background-color: rgba(255, 255, 255, 0.7); padding: 20px; border-radius: 5px;">
-                <h2><i class="fas fa-info-circle"></i> Reference Policy</h2>
-                <p>All references listed have given permission to be contacted regarding my professional qualifications and work history. When contacting references, please:</p>
-                <ul>
-                    <li>Mention my name and the position for which you're considering me</li>
-                    <li>Contact during regular business hours when possible</li>
-                    <li>Feel free to request additional references specific to your industry or position requirements</li>
-                </ul>
-                <p>Additional references are available upon request.</p>
+    <!-- References Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <i class="fas fa-address-book"></i>
+                    References
+                </span>
+                <h2 class="section-title">Professional Contacts</h2>
+                <p class="section-description">
+                    All references have given permission to be contacted regarding my professional qualifications
+                </p>
             </div>
-        </section>
-    </main>
-
-    <footer class="container">
-        <div class="space"></div>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Brandon Hinrichs</h3>
-                <p>IT & Human Services Professional</p>
-                <p>Hinrichs Specialty Services</p>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p><i class="fas fa-envelope"></i> bhinrichs1380@gmail.com</p>
-                <p><i class="fas fa-phone"></i> (402) 759-2210</p>
-                <p><i class="fas fa-map-marker-alt"></i> Geneva, NE</p>
-            </div>
-            <div class="footer-section">
-                <h3>Connect</h3>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Strongman1380" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <div class="skills-grid">
+                <!-- Judicial Branch References -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>Judicial Branch</h3>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--primary-500);">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                            <div>
+                                <h4 style="margin: 0; color: var(--text-primary);">Chris Reece</h4>
+                                <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Problem-Solving Court Coordinator</p>
+                                <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">Nebraska Judicial Branch</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                            <a href="mailto:chris.reece@nejudicialbranch.gov" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                            <a href="tel:4022397461" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-239-7461
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--primary-500);">
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary);">Katherine Rea</h4>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Specialized Populations Officer</p>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">Nebraska Judicial Branch</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px;">
+                            <a href="mailto:katherine.rea@nejudicialbranch.gov" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                            <a href="tel:4023102430" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-310-2430
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--primary-500);">
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary);">Brandi Baldisanno</h4>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Specialized Populations Officer</p>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">Nebraska Judicial Branch</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px;">
+                            <a href="mailto:brandi.baldisanno@nejudicialbranch.gov" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                            <a href="tel:4028758999" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-875-8999
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--primary-500);">
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary);">Brandi Nice</h4>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Northern Service Area Director</p>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">State of Nebraska</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px;">
+                            <a href="mailto:brandi.nice@nebraska.gov" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                            <a href="tel:4028758999" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-875-8999
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--primary-500);">
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary);">Linda Caster Senff</h4>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Retired County Judge</p>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">York/Hamilton County</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px;">
+                            <span style="display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email not available
+                            </span>
+                            <a href="tel:4023624925" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-362-4925
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Behavioral Health References -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Behavioral Health</h3>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--emerald-500);">
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary);">Michelle Lemke</h4>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Therapist</p>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">Lemke-Michels Psychotherapy</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px;">
+                            <a href="mailto:michelle@lemke-michelspsychotherapy.com" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                            <a href="tel:4027595276" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-759-5276
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--emerald-500);">
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary);">Cindy Betka</h4>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Therapist</p>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">Grand Island Mental Health Center</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px;">
+                            <a href="mailto:cindy@gimhmc.com" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                            <a href="tel:4028795959" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-879-5959
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--emerald-500);">
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary);">Tanya Oswald</h4>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Director</p>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">Sunrise Place</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px;">
+                            <a href="mailto:toswald@4bhs.org" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                            <a href="tel:4025649994" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-564-9994
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--emerald-500);">
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary);">Brian Samek</h4>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Director</p>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">Seekers of Serenity Place</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px;">
+                            <a href="mailto:bsamek@4bhs.org" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                            <a href="tel:4028795959" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-879-5959
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional & Community -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Professional & Community</h3>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--amber-500);">
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary);">Dameon Gilifian</h4>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Owner</p>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">Alcohol and Drug Solutions</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px;">
+                            <a href="mailto:alcoholanddrugsolutions@gmail.com" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                            <a href="tel:4026014289" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-601-4289
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--amber-500);">
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary);">Jodi Gilifian</h4>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Owner</p>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">Alcohol and Drug Solutions</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px;">
+                            <a href="mailto:alcoholanddrugsolutions@gmail.com" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                            <a href="tel:4026014289" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-601-4289
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--amber-500);">
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary);">Ryan Schroetlin</h4>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Director</p>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">Heartland Boys Home</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px;">
+                            <span style="display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email not available
+                            </span>
+                            <a href="tel:4027591910" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-759-1910
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 16px; border-left: 3px solid var(--amber-500);">
+                        <div>
+                            <h4 style="margin: 0; color: var(--text-primary);">Ed Young</h4>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-secondary);">Executive Director</p>
+                            <p style="margin: 4px 0 0 0; font-size: 0.875rem; color: var(--text-muted);">Heartland Boys Home</p>
+                        </div>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px;">
+                            <span style="display: inline-flex; align-items: center; gap: 6px; color: var(--text-muted); font-size: 0.875rem;">
+                                <i class="fas fa-envelope"></i>
+                                Email not available
+                            </span>
+                            <a href="tel:4029816569" class="contact-link" style="display: inline-flex; align-items: center; gap: 6px; color: var(--primary-600); font-size: 0.875rem;">
+                                <i class="fas fa-phone"></i>
+                                402-981-6569
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <p class="copyright">
-            &copy; 2025 Brandon Hinrichs. All rights reserved.
-        </p>
+    </section>
+
+    <!-- Reference Policy -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 40px;">
+                <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                    <div style="width: 50px; height: 50px; background: var(--gradient-primary); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h2 style="margin: 0;">Reference Policy</h2>
+                </div>
+                
+                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+                    All references listed have given permission to be contacted regarding my professional qualifications 
+                    and work history. When contacting references, please consider the following guidelines:
+                </p>
+                
+                <ul style="color: var(--text-secondary); line-height: 2; margin-bottom: 24px;">
+                    <li style="margin-bottom: 12px;">
+                        <i class="fas fa-check" style="color: var(--emerald-500); margin-right: 12px;"></i>
+                        Mention my name and the position for which you're considering me
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <i class="fas fa-check" style="color: var(--emerald-500); margin-right: 12px;"></i>
+                        Contact during regular business hours when possible
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <i class="fas fa-check" style="color: var(--emerald-500); margin-right: 12px;"></i>
+                        Feel free to request additional references specific to your industry or position requirements
+                    </li>
+                    <li>
+                        <i class="fas fa-check" style="color: var(--emerald-500); margin-right: 12px;"></i>
+                        Additional references are available upon request
+                    </li>
+                </ul>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Request Additional References
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Brandon Hinrichs</h3>
+                    <p>IT & Human Services Professional</p>
+                    <p>Hinrichs Specialty Services</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="workhistory.html">Work History</a></li>
+                        <li><a href="Educationcertifications.html">Education</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Strongman1380" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:bhinrichs1380@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Brandon Hinrichs. All rights reserved.</p>
+                <a href="#home" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                    Back to Top
+                </a>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>

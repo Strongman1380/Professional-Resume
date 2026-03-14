@@ -3,407 +3,795 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Brandon Hinrichs - IT Systems Administrator, Behavioral Health Professional, Human Services Specialist, and Digital Strategist">
-    <meta name="keywords" content="IT systems administration, behavioral health, human services, case management, probation, crisis intervention, Active Directory, Python, JavaScript, SQL, bilingual English Spanish">
+    <meta name="description" content="Brandon Hinrichs - IT Systems Administrator, Behavioral Health Professional, and Digital Strategist with 15+ years of experience">
+    <meta name="keywords" content="IT systems administration, behavioral health, software development, digital strategy, Brandon Hinrichs">
+    <meta name="author" content="Brandon Hinrichs">
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Brandon Hinrichs | IT & Human Services Professional">
+    <meta property="og:description" content="Multi-disciplinary professional with 15+ years in IT systems administration, software development, and behavioral health">
+    <meta property="og:image" content="Website.jpg">
+    
     <title>Brandon Hinrichs | IT & Human Services Professional</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <h1><i class="fas fa-user-tie"></i> BRANDON HINRICHS</h1>
-            <div class="title-bar">
-                <span>IT & Systems Administration</span> | <span>Behavioral Health & Human Services</span> | <span>Developer</span> | <span>Remote / CST</span> | <span>Bilingual: English / Spanish</span>
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-user-tie"></i>
+                <span>Brandon Hinrichs</span>
+            </a>
+            
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html" class="navbar-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="workhistory.html" class="navbar-link"><i class="fas fa-briefcase"></i> Work</a></li>
+                <li><a href="Educationcertifications.html" class="navbar-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="portfolio.html" class="navbar-link"><i class="fas fa-project-diagram"></i> Portfolio</a></li>
+                <li><a href="references.html" class="navbar-link"><i class="fas fa-users"></i> References</a></li>
+                <li><a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank" class="navbar-link"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+            
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
-    </header>
-
-    <nav class="minimal-nav">
-        <ul class="nav-links">
-            <li><a href="workhistory.html" class="nav-link"><i class="fas fa-briefcase"></i> Work History</a></li>
-            <li><a href="Educationcertifications.html" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
-            <li><a href="references.html" class="nav-link"><i class="fas fa-users"></i> References</a></li>
-            <li><a href="portfolio.html" class="nav-link"><i class="fas fa-project-diagram"></i> Portfolio</a></li>
-            <li><a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank" class="nav-link"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://github.com/Strongman1380" target="_blank" class="nav-link"><i class="fab fa-github"></i> GitHub</a></li>
-        </ul>
     </nav>
 
-    <main class="container">
-        <section class="profile">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="profile-image">
-                        <img src="IMG_0782.jpeg" alt="Brandon Hinrichs" class="img-fluid rounded-circle">
-                        <div class="social-badges">
-                            <span class="badge"><i class="fas fa-server"></i> 15+ Years IT Admin</span>
-                            <span class="badge"><i class="fas fa-hands-helping"></i> 14+ Years Human Services</span>
-                            <span class="badge"><i class="fas fa-globe-americas"></i> Bilingual (ES)</span>
-                            <span class="badge"><i class="fas fa-laptop-code"></i> Developer</span>
-                        </div>
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Available for Remote Opportunities</span>
                 </div>
-                <div class="col-md-8">
-                    <div class="profile-info">
-                        <h2 class="animated-heading">Professional Summary</h2>
-                        <p class="summary-text">
-                            Multi-disciplinary professional with 15+ years of experience spanning IT systems administration, software development, behavioral health, government services, and organizational operations. Combines 15 years of hands-on Windows environment administration &mdash; Active Directory, Group Policy, machine imaging, network infrastructure, remote support &mdash; with active daily development in JavaScript, Python, HTML/CSS, and SQL. Equally experienced in high-stakes client-facing work: case management, crisis intervention, trauma-informed practice, program development, and multi-agency coordination across Nebraska government, nonprofit, and healthcare systems. Bilingual in English and Spanish. Operates independently in fully remote environments without supervision. Brings a systems-thinking, data-driven approach to every role &mdash; whether building IT infrastructure, designing clinical documentation, or automating operational workflows.
-                        </p>
-
-                        <div class="contact-details">
-                            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:bhinrichs1380@gmail.com">bhinrichs1380@gmail.com</a></p>
-                            <p><i class="fas fa-phone"></i> Phone: <a href="tel:4027592210">(402) 759-2210</a></p>
-                            <p><i class="fas fa-map-marker-alt"></i> Location: Geneva, NE 68361</p>
-                            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank">LinkedIn Profile</a></p>
-                            <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Strongman1380" target="_blank">github.com/strongman1380</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills">
-            <h2 class="animated-heading"><i class="fas fa-cogs"></i> Core Competencies</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="skill-category">
-                        <h3>IT & Technical</h3>
-                        <div class="skill-container">
-                            <div class="skill-name">Windows 10/11 Administration &mdash; 15 Years</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 98%;">Expert</div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <div class="skill-name">Active Directory & Group Policy</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 95%;">Expert</div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <div class="skill-name">Network Infrastructure & Troubleshooting</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 90%;">Expert</div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <div class="skill-name">JavaScript, Python, HTML/CSS, SQL, Bash</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 90%;">Expert</div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <div class="skill-name">Okta / SSO / IAM Administration</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%;">Advanced</div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <div class="skill-name">Microsoft 365 & Google Workspace Admin</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 95%;">Expert</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill-category">
-                        <h3>Social Services & Operations</h3>
-                        <div class="skill-container">
-                            <div class="skill-name">Case Management & Crisis Intervention</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 95%;">Expert</div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <div class="skill-name">Trauma-Informed Practice & Training</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 90%;">Expert</div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <div class="skill-name">Program Development & Curriculum Design</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 90%;">Expert</div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <div class="skill-name">Multi-Agency & Stakeholder Coordination</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 90%;">Expert</div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <div class="skill-name">DHHS / VA / Government Systems Navigation</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%;">Advanced</div>
-                            </div>
-                        </div>
-                        <div class="skill-container">
-                            <div class="skill-name">Data Reporting & Compliance Documentation</div>
-                            <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%;">Advanced</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="tech-skills">
-            <h2 class="animated-heading"><i class="fas fa-laptop-code"></i> Technical Skills</h2>
-            <div class="tech-grid">
-                <div class="tech-category">
-                    <h3>Operating Systems & Administration</h3>
-                    <ul class="tech-list">
-                        <li><i class="fab fa-windows"></i> Windows 10/11 (15 years)</li>
-                        <li><i class="fab fa-apple"></i> macOS (daily professional use)</li>
-                        <li><i class="fab fa-linux"></i> Linux/Bash (familiarity)</li>
-                        <li><i class="fas fa-sitemap"></i> Active Directory & Group Policy</li>
-                        <li><i class="fas fa-desktop"></i> Machine Imaging & Provisioning</li>
-                        <li><i class="fas fa-shield-alt"></i> Endpoint Management</li>
-                    </ul>
-                </div>
-                <div class="tech-category">
-                    <h3>Development Languages</h3>
-                    <ul class="tech-list">
-                        <li><i class="fab fa-js"></i> JavaScript (proficient)</li>
-                        <li><i class="fab fa-python"></i> Python (proficient)</li>
-                        <li><i class="fab fa-html5"></i> HTML/CSS (proficient)</li>
-                        <li><i class="fas fa-database"></i> SQL (proficient)</li>
-                        <li><i class="fas fa-terminal"></i> Bash</li>
-                    </ul>
-                </div>
-                <div class="tech-category">
-                    <h3>Frameworks & Platforms</h3>
-                    <ul class="tech-list">
-                        <li><i class="fab fa-react"></i> React / Angular / Vue.js</li>
-                        <li><i class="fab fa-node-js"></i> Node.js / Flask</li>
-                        <li><i class="fas fa-cloud"></i> AWS / Azure / GCP (familiarity)</li>
-                        <li><i class="fas fa-code-branch"></i> Docker / CI/CD Pipelines</li>
-                        <li><i class="fas fa-project-diagram"></i> RESTful API / GraphQL</li>
-                        <li><i class="fas fa-cogs"></i> Boomi / Shopify Liquid / SuiteScript</li>
-                    </ul>
-                </div>
-                <div class="tech-category">
-                    <h3>Identity & Security</h3>
-                    <ul class="tech-list">
-                        <li><i class="fas fa-key"></i> Okta (SSO, MFA, provisioning)</li>
-                        <li><i class="fas fa-user-shield"></i> Azure AD / Microsoft Entra ID</li>
-                        <li><i class="fas fa-lock"></i> Cybersecurity & MFA Enforcement</li>
-                        <li><i class="fas fa-clipboard-check"></i> HIPAA / 42 CFR Part 2</li>
-                        <li><i class="fas fa-network-wired"></i> LAN/WAN/VPN / TCP/IP / DNS / DHCP</li>
-                    </ul>
-                </div>
-                <div class="tech-category">
-                    <h3>AI & Data Tools</h3>
-                    <ul class="tech-list">
-                        <li><i class="fas fa-robot"></i> Claude API / ChatGPT API / Gemini API</li>
-                        <li><i class="fas fa-brain"></i> LLM Pipeline Development</li>
-                        <li><i class="fas fa-spider"></i> Firecrawl / Exa / Tavily / BrightData</li>
-                        <li><i class="fas fa-database"></i> MySQL / PostgreSQL / MongoDB</li>
-                        <li><i class="fas fa-chart-bar"></i> Dashboard Development & Reporting</li>
-                    </ul>
-                </div>
-                <div class="tech-category">
-                    <h3>Enterprise & Productivity</h3>
-                    <ul class="tech-list">
-                        <li><i class="fab fa-microsoft"></i> Microsoft 365 (Advanced)</li>
-                        <li><i class="fab fa-google"></i> Google Workspace (Advanced)</li>
-                        <li><i class="fas fa-globe"></i> WordPress / GitHub Pages / SEO/AEO</li>
-                        <li><i class="fas fa-mobile-alt"></i> Intune / MDM / Device Lifecycle</li>
-                        <li><i class="fas fa-chart-line"></i> Google Analytics / SEO / AEO</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="tech-skills">
-            <h2 class="animated-heading"><i class="fas fa-hands-helping"></i> Clinical & Human Services Skills</h2>
-            <div class="tech-grid">
-                <div class="tech-category">
-                    <h3>Clinical & Practice</h3>
-                    <ul class="tech-list">
-                        <li><i class="fas fa-heart"></i> Trauma-Informed Care</li>
-                        <li><i class="fas fa-comments"></i> Motivational Interviewing</li>
-                        <li><i class="fas fa-brain"></i> DBT & Cognitive-Behavioral Approaches</li>
-                        <li><i class="fas fa-shield-alt"></i> Safety Planning & Crisis Intervention</li>
-                        <li><i class="fas fa-clipboard-list"></i> Strength-Based Assessment</li>
-                        <li><i class="fas fa-users"></i> Family Systems</li>
-                    </ul>
-                </div>
-                <div class="tech-category">
-                    <h3>Program Development</h3>
-                    <ul class="tech-list">
-                        <li><i class="fas fa-chalkboard-teacher"></i> Curriculum Design & Training</li>
-                        <li><i class="fas fa-laptop"></i> E-Learning Module Creation</li>
-                        <li><i class="fas fa-users-cog"></i> Workshop Facilitation</li>
-                        <li><i class="fas fa-brain"></i> MRT / T4C / Reflective Dialogue / Why Try</li>
-                        <li><i class="fas fa-book"></i> Youth Recovery & Career Workbooks</li>
-                    </ul>
-                </div>
-                <div class="tech-category">
-                    <h3>Documentation & Compliance</h3>
-                    <ul class="tech-list">
-                        <li><i class="fas fa-file-alt"></i> Case Notes & Court Reports</li>
-                        <li><i class="fas fa-gavel"></i> Pre-Sentence Investigations</li>
-                        <li><i class="fas fa-file-medical"></i> DHHS-Compliant Records</li>
-                        <li><i class="fas fa-clipboard-check"></i> Treatment Plans</li>
-                        <li><i class="fas fa-search"></i> Validated Risk/Needs Assessment Tools</li>
-                    </ul>
-                </div>
-                <div class="tech-category">
-                    <h3>Government & Community</h3>
-                    <ul class="tech-list">
-                        <li><i class="fas fa-landmark"></i> DHHS / VA / Government Systems</li>
-                        <li><i class="fas fa-handshake"></i> Multi-Agency Coordination</li>
-                        <li><i class="fas fa-id-card"></i> Medicaid / SSI / SSDI / VA Benefits</li>
-                        <li><i class="fas fa-home"></i> Housing & Employment Navigation</li>
-                        <li><i class="fas fa-globe-americas"></i> Bilingual Service Delivery (EN/ES)</li>
-                        <li><i class="fas fa-shield-alt"></i> Online Community Moderation</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="client-portfolio">
-            <h2 class="animated-heading"><i class="fas fa-briefcase"></i> Select Client Portfolio (Hinrichs Specialty Services)</h2>
-            <div class="portfolio-carousel">
-                <div class="portfolio-item">
-                    <div class="portfolio-content">
-                        <h3>Hope Gospel Rescue Mission</h3>
-                        <p>Branding, SEO, Intake System, Reentry Programming</p>
-                        <a href="https://hopegospelrescuemission-com.vercel.app" target="_blank" class="portfolio-link">View Website <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-content">
-                        <h3>Alcohol & Drug Solutions (ADS)</h3>
-                        <p>Digital engagement, Medicaid application automation, attorney partnership funnel</p>
-                        <a href="https://www.alcoholanddrugsolutions.com" target="_blank" class="portfolio-link">View Website <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-content">
-                        <h3>RoofGuard LLC & Hancock Builderz</h3>
-                        <p>Website buildout, SEO, lead generation campaigns</p>
-                        <a href="https://roofguardllc.com" target="_blank" class="portfolio-link">View Website <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-content">
-                        <h3>Privacy Fence Construction</h3>
-                        <p>Branding, CRM setup, online quote tool, Facebook growth</p>
-                        <a href="https://privacy-fence-construction-com.vercel.app/index.html" target="_blank" class="portfolio-link">View Website <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-content">
-                        <h3>Sister's Caf&eacute;</h3>
-                        <p>Website, Google profile optimization, photo promotion content</p>
-                        <a href="https://strongman1380.github.io/www.sisterscafe.com" target="_blank" class="portfolio-link">View Website <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-content">
-                        <h3>D'ZZZ Ride'z & Tour'z</h3>
-                        <p>Social media strategy, brand kit, customer booking workflow</p>
-                        <a href="https://www.dzzzridez.com" target="_blank" class="portfolio-link">View Website <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-nav">
-                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
-                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </section>
-
-        <section class="achievements">
-            <h2 class="animated-heading"><i class="fas fa-plus-circle"></i> Additional</h2>
-            <div class="achievement-grid">
-                <div class="achievement-item">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Ventures</h3>
-                    <p>The Next Right Step Recovery (AI-powered resource navigation) &bull; Hinrichs Specialty Services (IT consulting, web dev, AI integration) &bull; Caitlin and Brandon's Scented VIP Lounge (Scentsy)</p>
-                </div>
-                <div class="achievement-item">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <h3>Curriculum Development</h3>
-                    <p>Trauma-Informed Practice training (8 modules) &bull; ASPIRE Therapeutic Parenting Program &bull; Youth recovery workbooks &bull; Career exploration workbooks</p>
-                </div>
-                <div class="achievement-item">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <h3>Nebraska Roots</h3>
-                    <p>Long-term central Nebraska resident with deep community relationships across York, Hamilton, and Fillmore counties</p>
-                </div>
-                <div class="achievement-item">
-                    <i class="fas fa-laptop-house"></i>
-                    <h3>Remote Operations</h3>
-                    <p>5+ years fully remote professional operation &bull; Dedicated home office &bull; High-speed internet &bull; CST time zone &bull; Available for GMT overlap</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-form">
-            <h2 class="animated-heading"><i class="fas fa-envelope"></i> Contact Me</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <div class="btn-container">
-                    <button type="submit" class="btn">Send Message</button>
-                </div>
-                <p class="form-note">
-                    <small>This form will open your default email client with a pre-filled message to bhinrichs1380@gmail.com</small>
+                
+                <h1 class="hero-title">
+                    Hi, I'm <span>Brandon Hinrichs</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    IT Systems Administrator • Software Developer • Behavioral Health Professional • Digital Strategist
                 </p>
-            </form>
-        </section>
-    </main>
-
-    <footer class="container">
-        <div class="space"></div>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Brandon Hinrichs</h3>
-                <p>IT & Human Services Professional</p>
-                <p>Hinrichs Specialty Services</p>
+                
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                    <a href="portfolio.html" class="btn btn-secondary">
+                        <i class="fas fa-folder-open"></i>
+                        View My Work
+                    </a>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Strongman1380" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:bhinrichs1380@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+14027592210" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p><i class="fas fa-envelope"></i> bhinrichs1380@gmail.com</p>
-                <p><i class="fas fa-phone"></i> (402) 759-2210</p>
-            </div>
-            <div class="footer-section">
-                <h3>Connect</h3>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Strongman1380" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="IMG_0782.jpeg" alt="Brandon Hinrichs">
                 </div>
             </div>
         </div>
-        <p class="copyright">
-            &copy; 2025 Brandon Hinrichs. All rights reserved.
-        </p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <i class="fas fa-user"></i>
+                    About Me
+                </span>
+                <h2 class="section-title">Bridging Technology & Human Services</h2>
+                <p class="section-description">
+                    A unique blend of technical expertise and human-centered practice
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="IMG_0782.jpeg" alt="Brandon Hinrichs Professional Photo">
+                </div>
+                
+                <div class="about-content">
+                    <h3>Professional Summary</h3>
+                    <p class="about-text">
+                        Multi-disciplinary professional with 15+ years of experience spanning IT systems administration, 
+                        software development, behavioral health, government services, and organizational operations. 
+                        Combines deep technical expertise in Windows environments, Active Directory, and programming 
+                        with high-stakes client-facing work in case management, crisis intervention, and program development.
+                    </p>
+                    <p class="about-text">
+                        Bilingual in English and Spanish, I operate independently in fully remote environments and bring 
+                        a systems-thinking, data-driven approach to every role—whether building IT infrastructure, 
+                        designing clinical documentation, or automating operational workflows.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Years IT Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">14+</div>
+                            <div class="stat-label">Years Human Services</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <i class="fas fa-cogs"></i>
+                    Expertise
+                </span>
+                <h2 class="section-title">Core Competencies</h2>
+                <p class="section-description">
+                    A diverse skill set spanning technology, healthcare, and human services
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- IT & Technical -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>IT & Systems Administration</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Windows 10/11 Administration</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="98"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Active Directory & Group Policy</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Network Infrastructure</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Okta / SSO / IAM</span>
+                                <span class="skill-level-text">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fab fa-windows"></i> Windows</span>
+                        <span class="tech-tag"><i class="fas fa-sitemap"></i> AD</span>
+                        <span class="tech-tag"><i class="fas fa-key"></i> Okta</span>
+                        <span class="tech-tag"><i class="fab fa-microsoft"></i> M365</span>
+                    </div>
+                </div>
+                
+                <!-- Development -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Development</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript / TypeScript</span>
+                                <span class="skill-level-text">Proficient</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level-text">Proficient</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL / Databases</span>
+                                <span class="skill-level-text">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="82"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i> SQL</span>
+                    </div>
+                </div>
+                
+                <!-- Clinical & Human Services -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Clinical & Human Services</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Case Management</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Crisis Intervention</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Trauma-Informed Care</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Program Development</span>
+                                <span class="skill-level-text">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fas fa-heart"></i> Trauma Care</span>
+                        <span class="tech-tag"><i class="fas fa-comments"></i> MI</span>
+                        <span class="tech-tag"><i class="fas fa-brain"></i> CBT/DBT</span>
+                        <span class="tech-tag"><i class="fas fa-globe-americas"></i> Bilingual</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Grid -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <i class="fas fa-laptop-code"></i>
+                    Tech Stack
+                </span>
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-description">
+                    Comprehensive toolkit for modern IT and development challenges
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3>Operating Systems</h3>
+                    </div>
+                    <div class="tech-tags" style="margin-top: 0;">
+                        <span class="tech-tag"><i class="fab fa-windows"></i> Windows 10/11</span>
+                        <span class="tech-tag"><i class="fab fa-apple"></i> macOS</span>
+                        <span class="tech-tag"><i class="fab fa-linux"></i> Linux/Bash</span>
+                        <span class="tech-tag"><i class="fas fa-sitemap"></i> Active Directory</span>
+                        <span class="tech-tag"><i class="fas fa-desktop"></i> Intune/MDM</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>Frameworks & Platforms</h3>
+                    </div>
+                    <div class="tech-tags" style="margin-top: 0;">
+                        <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="tech-tag"><i class="fas fa-flask"></i> Flask</span>
+                        <span class="tech-tag"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Security & Identity</h3>
+                    </div>
+                    <div class="tech-tags" style="margin-top: 0;">
+                        <span class="tech-tag"><i class="fas fa-key"></i> Okta SSO</span>
+                        <span class="tech-tag"><i class="fas fa-user-shield"></i> Azure AD</span>
+                        <span class="tech-tag"><i class="fas fa-lock"></i> MFA</span>
+                        <span class="tech-tag"><i class="fas fa-network-wired"></i> VPN/TCP/IP</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI & Data</h3>
+                    </div>
+                    <div class="tech-tags" style="margin-top: 0;">
+                        <span class="tech-tag"><i class="fas fa-brain"></i> LLM APIs</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
+                        <span class="tech-tag"><i class="fas fa-chart-bar"></i> Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work History Preview -->
+    <section class="work-history section" id="work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <i class="fas fa-briefcase"></i>
+                    Experience
+                </span>
+                <h2 class="section-title">Recent Positions</h2>
+                <p class="section-description">
+                    A track record of success across IT, healthcare, and government sectors
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Owner — IT Consultant, Developer & Digital Strategist</h3>
+                                <div class="timeline-company">
+                                    <i class="fas fa-building"></i>
+                                    Hinrichs Specialty Services — Remote (CST)
+                                </div>
+                            </div>
+                            <span class="timeline-period">
+                                <i class="fas fa-calendar"></i>
+                                2020 — Present
+                            </span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Design and manage end-to-end IT systems for businesses and nonprofits, covering identity management, device lifecycle, SaaS administration, and security compliance.</p>
+                            <ul>
+                                <li>Administer Okta SSO environments including user provisioning, MFA enforcement, and security policy configuration</li>
+                                <li>Manage Microsoft 365 and Google Workspace at organizational level</li>
+                                <li>Develop automation workflows using Python, JavaScript, and SQL</li>
+                                <li>Provide website development, SEO strategy, and AI integration consulting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Community Treatment Aide / Community Support Worker</h3>
+                                <div class="timeline-company">
+                                    <i class="fas fa-building"></i>
+                                    Specialized Outpatient Services — Grand Island, NE
+                                </div>
+                            </div>
+                            <span class="timeline-period">
+                                <i class="fas fa-calendar"></i>
+                                Feb 2026 — Present
+                            </span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Provide community-based support to individuals and families in a nonprofit behavioral health setting.</p>
+                            <ul>
+                                <li>Coordinate with treatment teams and document progress</li>
+                                <li>Administer clinical documentation systems with HIPAA compliance</li>
+                                <li>Support client compliance with individualized service plans</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Director of In-Home Services</h3>
+                                <div class="timeline-company">
+                                    <i class="fas fa-building"></i>
+                                    Epworth Family Resources — Nebraska
+                                </div>
+                            </div>
+                            <span class="timeline-period">
+                                <i class="fas fa-calendar"></i>
+                                Nov 2025 — Feb 2026
+                            </span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Led program operations for in-home services department across multiple sites.</p>
+                            <ul>
+                                <li>Built integrated staff training site with e-learning modules</li>
+                                <li>Designed custom database and mobile workflow systems</li>
+                                <li>Managed M365 platform access and compliance documentation</li>
+                                <li>Built SQL-supported reporting infrastructure for leadership dashboards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="workhistory.html" class="btn btn-outline">
+                    <i class="fas fa-list"></i>
+                    View Complete Work History
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <i class="fas fa-folder-open"></i>
+                    Portfolio
+                </span>
+                <h2 class="section-title">Select Client Projects</h2>
+                <p class="section-description">
+                    Showcasing digital solutions delivered through Hinrichs Specialty Services
+                </p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-card-image">
+                        <i class="fas fa-heart"></i>
+                        <div class="portfolio-card-overlay">
+                            <a href="https://hopegospelrescuemission-com.vercel.app" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Visit Site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="portfolio-card-category">Nonprofit</span>
+                        <h3 class="portfolio-card-title">Hope Gospel Rescue Mission</h3>
+                        <p class="portfolio-card-description">
+                            Complete branding, SEO optimization, and digital intake system for community reentry programming.
+                        </p>
+                        <div class="portfolio-card-tags">
+                            <span class="portfolio-card-tag">Web Dev</span>
+                            <span class="portfolio-card-tag">SEO</span>
+                            <span class="portfolio-card-tag">Branding</span>
+                        </div>
+                        <a href="https://hopegospelrescuemission-com.vercel.app" target="_blank" class="portfolio-card-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-card-image" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+                        <i class="fas fa-clinic-medical"></i>
+                        <div class="portfolio-card-overlay">
+                            <a href="https://www.alcoholanddrugsolutions.com" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Visit Site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="portfolio-card-category">Healthcare</span>
+                        <h3 class="portfolio-card-title">Alcohol & Drug Solutions</h3>
+                        <p class="portfolio-card-description">
+                            Digital engagement platform with Medicaid application automation and attorney partnership funnel.
+                        </p>
+                        <div class="portfolio-card-tags">
+                            <span class="portfolio-card-tag">Automation</span>
+                            <span class="portfolio-card-tag">Web Dev</span>
+                            <span class="portfolio-card-tag">CRM</span>
+                        </div>
+                        <a href="https://www.alcoholanddrugsolutions.com" target="_blank" class="portfolio-card-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-card-image" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                        <i class="fas fa-home"></i>
+                        <div class="portfolio-card-overlay">
+                            <a href="https://roofguardllc.com" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Visit Site
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="portfolio-card-category">Small Business</span>
+                        <h3 class="portfolio-card-title">RoofGuard LLC</h3>
+                        <p class="portfolio-card-description">
+                            Professional website buildout with SEO optimization and lead generation campaigns.
+                        </p>
+                        <div class="portfolio-card-tags">
+                            <span class="portfolio-card-tag">Web Dev</span>
+                            <span class="portfolio-card-tag">SEO</span>
+                            <span class="portfolio-card-tag">Lead Gen</span>
+                        </div>
+                        <a href="https://roofguardllc.com" target="_blank" class="portfolio-card-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="portfolio.html" class="btn btn-outline">
+                    <i class="fas fa-th-large"></i>
+                    View Full Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <i class="fas fa-envelope"></i>
+                    Contact
+                </span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    Ready to discuss your next project or opportunity? Get in touch.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p class="contact-info-text">
+                        I'm currently available for remote IT administration roles, software development 
+                        projects, and consulting engagements. Whether you need help with infrastructure 
+                        modernization, custom software solutions, or digital strategy, I'd love to hear from you.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">Email</div>
+                                <div class="contact-item-value">
+                                    <a href="mailto:bhinrichs1380@gmail.com">bhinrichs1380@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">Phone</div>
+                                <div class="contact-item-value">
+                                    <a href="tel:+14027592210">(402) 759-2210</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">Location</div>
+                                <div class="contact-item-value">Geneva, NE 68361 (Remote)</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">Availability</div>
+                                <div class="contact-item-value">CST Time Zone • GMT Overlap</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                        <p style="text-align: center; margin-top: 16px; font-size: 0.875rem; color: var(--text-muted);">
+                            <small>This will open your default email client with a pre-filled message</small>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Brandon Hinrichs</h3>
+                    <p>IT & Human Services Professional</p>
+                    <p>Hinrichs Specialty Services</p>
+                    <p style="margin-top: 16px; font-size: 0.875rem;">
+                        Combining 15+ years of technical expertise with deep human services experience 
+                        to deliver solutions that make a real difference.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="workhistory.html">Work History</a></li>
+                        <li><a href="Educationcertifications.html">Education</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Strongman1380" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:bhinrichs1380@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Brandon Hinrichs. All rights reserved.</p>
+                <a href="#home" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                    Back to Top
+                </a>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>

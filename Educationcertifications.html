@@ -5,199 +5,380 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Education background and professional certifications of Brandon Hinrichs - IT systems administrator, software developer, behavioral health professional">
     <meta name="keywords" content="IT systems administration, software development, behavioral health, Brandon Hinrichs education, certifications">
-    <title>Brandon Hinrichs | Education & Certifications</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Education & Certifications | Brandon Hinrichs</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <h1><i class="fas fa-graduation-cap"></i> EDUCATION & CERTIFICATIONS</h1>
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-user-tie"></i>
+                <span>Brandon Hinrichs</span>
+            </a>
+            
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html" class="navbar-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="workhistory.html" class="navbar-link"><i class="fas fa-briefcase"></i> Work</a></li>
+                <li><a href="Educationcertifications.html" class="navbar-link active"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="portfolio.html" class="navbar-link"><i class="fas fa-project-diagram"></i> Portfolio</a></li>
+                <li><a href="references.html" class="navbar-link"><i class="fas fa-users"></i> References</a></li>
+                <li><a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank" class="navbar-link"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+            
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-    </header>
-
-    <nav class="minimal-nav">
-        <ul class="nav-links">
-            <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="workhistory.html" class="nav-link"><i class="fas fa-briefcase"></i> Work History</a></li>
-            <li><a href="references.html" class="nav-link"><i class="fas fa-users"></i> References</a></li>
-            <li><a href="portfolio.html" class="nav-link"><i class="fas fa-project-diagram"></i> Portfolio</a></li>
-            <li><a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank" class="nav-link"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://github.com/Strongman1380" target="_blank" class="nav-link"><i class="fab fa-github"></i> GitHub</a></li>
-        </ul>
     </nav>
 
-    <main class="container">
-        <section class="education">
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="5"><i class="fas fa-university"></i> Education History</th>
-                    </tr>
-                    <tr>
-                        <th class="other-lables">Institution</th>
-                        <th class="other-lables">Graduation Status</th>
-                        <th class="other-lables">Location</th>
-                        <th class="other-lables">Degree/Credential</th>
-                        <th class="other-lables">Years Attended</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Martin Luther College</td>
-                        <td>Graduated &mdash; May 2007</td>
-                        <td>New Ulm, MN</td>
-                        <td>Bachelor of Science in Psychology, Spanish Minor &mdash; 3.78 GPA, Honor Roll. Study abroad: Quito, Ecuador</td>
-                        <td>2003&ndash;2007</td>
-                    </tr>
-                    <tr>
-                        <td>Wisconsin Lutheran Seminary</td>
-                        <td>Attended</td>
-                        <td>Mequon, WI</td>
-                        <td>Graduate-level coursework in Theology</td>
-                        <td>2007&ndash;2008</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <div class="space"></div>
-
-        <section class="certifications">
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3"><i class="fas fa-certificate"></i> Certifications & Training</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="cert-item">
-                                <h3>Wraparound / Home Builders Certification</h3>
-                                <p>Issuing Organization: Cedars (Lincoln, NE)</p>
-                            </div>
-
-                            <div class="cert-item">
-                                <h3>PSMAPP / Foster Care Training</h3>
-                                <p>Issuing Organization: Children's Alliance of Kansas (Topeka, KS)</p>
-                            </div>
-
-                            <div class="cert-item">
-                                <h3>Crossroads Certification</h3>
-                                <p>National Curriculum Training Institute (Feb 2023)</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="cert-item">
-                                <h3>Real Colors Certification</h3>
-                                <p>National Curriculum Training Institute (Jul 2018)</p>
-                            </div>
-
-                            <div class="cert-item">
-                                <h3>Moral Reconation Therapy</h3>
-                                <p>Nebraska Supreme Court (Feb 2018)</p>
-                            </div>
-
-                            <div class="cert-item">
-                                <h3>Thinking for a Change Facilitator</h3>
-                                <p>Nebraska Supreme Court</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="cert-item">
-                                <h3>Reflective Dialogue Facilitator</h3>
-                                <p>Nebraska Supreme Court</p>
-                            </div>
-
-                            <div class="cert-item">
-                                <h3>Why Try Behavioral Cognitive Training</h3>
-                                <p>Why Try Corrections Services</p>
-                            </div>
-
-                            <div class="cert-item">
-                                <h3>CPR / First Aid</h3>
-                                <p>Nebraska</p>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <div class="space"></div>
-
-        <section class="continuing-education">
-            <table>
-                <thead>
-                    <tr>
-                        <th><i class="fas fa-book"></i> Continuing Development</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <p>Continuous self-directed technical development: systems administration, software development, AI integration, cloud platforms, cybersecurity, IT operations &mdash; applied across multiple production environments.</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <div class="space"></div>
-
-        <section class="continuing-education">
-            <table>
-                <thead>
-                    <tr>
-                        <th><i class="fas fa-globe-americas"></i> Language Skills</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li><strong>English:</strong> Native proficiency</li>
-                                <li><strong>Spanish:</strong> Fluent &mdash; full professional service delivery, client support, and bilingual content across all channels</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
-
-    <footer class="container">
-        <div class="space"></div>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Brandon Hinrichs</h3>
-                <p>IT & Human Services Professional</p>
-                <p>Hinrichs Specialty Services</p>
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 40vh; padding-top: 120px;">
+        <div class="container" style="text-align: center;">
+            <div class="hero-badge" style="margin-bottom: 24px;">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Academic Background</span>
             </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p><i class="fas fa-envelope"></i> bhinrichs1380@gmail.com</p>
-                <p><i class="fas fa-phone"></i> (402) 759-2210</p>
-                <p><i class="fas fa-map-marker-alt"></i> Geneva, NE</p>
+            <h1 class="hero-title" style="margin-bottom: 20px;">
+                Education & <span>Certifications</span>
+            </h1>
+            <p class="hero-subtitle" style="max-width: 700px; margin: 0 auto;">
+                Formal education, professional certifications, and continuous learning 
+                across technology and human services disciplines
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <i class="fas fa-university"></i>
+                    Education
+                </span>
+                <h2 class="section-title">Academic Background</h2>
             </div>
-            <div class="footer-section">
-                <h3>Connect</h3>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Strongman1380" target="_blank"><i class="fab fa-github"></i></a>
+            
+            <div class="skills-grid">
+                <!-- Martin Luther College -->
+                <div class="skill-category" style="grid-column: span 2;">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0;">Martin Luther College</h3>
+                            <p style="margin: 4px 0 0 0; color: var(--text-secondary); font-size: 0.95rem;">New Ulm, MN</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
+                        <div>
+                            <strong style="color: var(--text-primary);">Bachelor of Science in Psychology</strong>
+                            <span style="color: var(--text-muted); margin: 0 12px;">|</span>
+                            <span style="color: var(--text-secondary);">Spanish Minor</span>
+                        </div>
+                        <span class="timeline-period">
+                            <i class="fas fa-calendar"></i>
+                            2003 – 2007
+                        </span>
+                    </div>
+                    <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-check-circle" style="color: var(--emerald-500);"></i>
+                            <span style="color: var(--text-secondary);">Graduated May 2007</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-star" style="color: var(--amber-500);"></i>
+                            <span style="color: var(--text-secondary);">3.78 GPA, Honor Roll</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-plane" style="color: var(--primary-500);"></i>
+                            <span style="color: var(--text-secondary);">Study Abroad: Quito, Ecuador</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wisconsin Lutheran Seminary -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0;">Wisconsin Lutheran Seminary</h3>
+                            <p style="margin: 4px 0 0 0; color: var(--text-secondary); font-size: 0.95rem;">Mequon, WI</p>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <strong style="color: var(--text-primary);">Graduate Coursework in Theology</strong>
+                    </div>
+                    <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-circle" style="color: var(--slate-400); font-size: 0.75rem;"></i>
+                            <span style="color: var(--text-secondary);">Attended</span>
+                        </div>
+                        <span class="timeline-period">
+                            <i class="fas fa-calendar"></i>
+                            2007 – 2008
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
-        <p class="copyright">
-            &copy; 2025 Brandon Hinrichs. All rights reserved.
-        </p>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <i class="fas fa-certificate"></i>
+                    Certifications
+                </span>
+                <h2 class="section-title">Professional Certifications & Training</h2>
+                <p class="section-description">
+                    Specialized training and certifications across behavioral health, trauma-informed care, and evidence-based practices
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Clinical & Therapeutic -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Clinical & Therapeutic</h3>
+                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <strong style="color: var(--text-primary);">Wraparound / Home Builders Certification</strong>
+                                <i class="fas fa-certificate" style="color: var(--primary-500);"></i>
+                            </div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Cedars (Lincoln, NE)</p>
+                        </li>
+                        <li style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <strong style="color: var(--text-primary);">PSMAPP / Foster Care Training</strong>
+                                <i class="fas fa-certificate" style="color: var(--primary-500);"></i>
+                            </div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Children's Alliance of Kansas (Topeka, KS)</p>
+                        </li>
+                        <li style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <strong style="color: var(--text-primary);">CPR / First Aid</strong>
+                                <i class="fas fa-certificate" style="color: var(--primary-500);"></i>
+                            </div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Nebraska</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Evidence-Based Programs -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Evidence-Based Programs</h3>
+                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <strong style="color: var(--text-primary);">Moral Reconation Therapy (MRT)</strong>
+                                <i class="fas fa-certificate" style="color: var(--primary-500);"></i>
+                            </div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Nebraska Supreme Court (Feb 2018)</p>
+                        </li>
+                        <li style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <strong style="color: var(--text-primary);">Thinking for a Change Facilitator</strong>
+                                <i class="fas fa-certificate" style="color: var(--primary-500);"></i>
+                            </div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Nebraska Supreme Court</p>
+                        </li>
+                        <li style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <strong style="color: var(--text-primary);">Reflective Dialogue Facilitator</strong>
+                                <i class="fas fa-certificate" style="color: var(--primary-500);"></i>
+                            </div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Nebraska Supreme Court</p>
+                        </li>
+                        <li style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <strong style="color: var(--text-primary);">Why Try Behavioral Cognitive Training</strong>
+                                <i class="fas fa-certificate" style="color: var(--primary-500);"></i>
+                            </div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Why Try Corrections Services</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Assessment & Training -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Assessment & Training</h3>
+                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <strong style="color: var(--text-primary);">Crossroads Certification</strong>
+                                <i class="fas fa-certificate" style="color: var(--primary-500);"></i>
+                            </div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">National Curriculum Training Institute (Feb 2023)</p>
+                        </li>
+                        <li style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <strong style="color: var(--text-primary);">Real Colors Certification</strong>
+                                <i class="fas fa-certificate" style="color: var(--primary-500);"></i>
+                            </div>
+                            <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">National Curriculum Training Institute (Jul 2018)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Continuing Education & Skills -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">
+                    <i class="fas fa-book-reader"></i>
+                    Continuous Learning
+                </span>
+                <h2 class="section-title">Continuing Development</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Technical Development</h3>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Continuous self-directed technical development across systems administration, software development, 
+                        AI integration, cloud platforms, cybersecurity, and IT operations — applied across multiple 
+                        production environments and client engagements.
+                    </p>
+                    <div class="tech-tags" style="margin-top: 20px;">
+                        <span class="tech-tag"><i class="fas fa-code"></i> Programming</span>
+                        <span class="tech-tag"><i class="fas fa-server"></i> Systems Admin</span>
+                        <span class="tech-tag"><i class="fas fa-robot"></i> AI/ML</span>
+                        <span class="tech-tag"><i class="fas fa-cloud"></i> Cloud Platforms</span>
+                        <span class="tech-tag"><i class="fas fa-shield-alt"></i> Security</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3>Language Skills</h3>
+                    </div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <strong style="color: var(--text-primary);">English</strong>
+                                    <p style="font-size: 0.875rem; color: var(--text-muted); margin: 4px 0 0 0;">Native Proficiency</p>
+                                </div>
+                                <i class="fas fa-flag-usa" style="font-size: 2rem; color: var(--primary-500);"></i>
+                            </div>
+                        </li>
+                        <li style="padding: 16px; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <strong style="color: var(--text-primary);">Spanish</strong>
+                                    <p style="font-size: 0.875rem; color: var(--text-muted); margin: 4px 0 0 0;">Full Professional Proficiency</p>
+                                </div>
+                                <i class="fas fa-language" style="font-size: 2rem; color: var(--primary-500);"></i>
+                            </div>
+                        </li>
+                    </ul>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 16px;">
+                        Bilingual service delivery including client support, documentation, and content creation 
+                        across all communication channels.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Brandon Hinrichs</h3>
+                    <p>IT & Human Services Professional</p>
+                    <p>Hinrichs Specialty Services</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="workhistory.html">Work History</a></li>
+                        <li><a href="Educationcertifications.html">Education</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/brandon-hinrichs-3841bb78" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Strongman1380" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:bhinrichs1380@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Brandon Hinrichs. All rights reserved.</p>
+                <a href="#home" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                    Back to Top
+                </a>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
