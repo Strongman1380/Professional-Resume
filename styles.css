@@ -195,6 +195,28 @@ a:hover {
     transition: all var(--transition-base);
 }
 
+/* Navbar sits over the dark hero — use white text until scrolled */
+.navbar:not(.scrolled) .navbar-brand,
+.navbar:not(.scrolled) .navbar-link,
+.navbar:not(.scrolled) .navbar-toggle span {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar:not(.scrolled) .navbar-link:hover,
+.navbar:not(.scrolled) .navbar-link.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+/* Scrolled: use theme-aware colors */
+.navbar.scrolled .navbar-brand {
+    color: var(--text-primary);
+}
+
+.navbar.scrolled .navbar-link {
+    color: var(--text-secondary);
+}
+
 .navbar.scrolled {
     background: var(--card-bg);
     backdrop-filter: blur(20px);
@@ -322,6 +344,8 @@ a:hover {
     position: relative;
     overflow: hidden;
     padding-top: 80px;
+    /* Hero always has a dark gradient background — all text must be white */
+    color: white;
 }
 
 .hero::before {
