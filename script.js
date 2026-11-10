@@ -4,9 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // ===================================
-    // THEME TOGGLE (DARK MODE)
-    // ===================================
+    // Dark mode toggle.
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = themeToggle?.querySelector('i');
     
@@ -43,9 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // ===================================
-    // NAVBAR SCROLL EFFECT
-    // ===================================
+    // Navbar background on scroll.
     const navbar = document.getElementById('navbar');
     const navbarToggle = document.getElementById('navbarToggle');
     const navbarMenu = document.getElementById('navbarMenu');
@@ -66,9 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Listen for scroll events
     window.addEventListener('scroll', handleNavbarScroll, { passive: true });
     
-    // ===================================
-    // MOBILE MENU TOGGLE
-    // ===================================
+    // Mobile menu toggle.
     if (navbarToggle && navbarMenu) {
         navbarToggle.addEventListener('click', function() {
             navbarToggle.classList.toggle('active');
@@ -93,9 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ===================================
-    // ACTIVE NAVIGATION LINK
-    // ===================================
+    // Mark the active nav link.
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.navbar-link');
     
@@ -106,9 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // ===================================
-    // SMOOTH SCROLL FOR ANCHOR LINKS
-    // ===================================
+    // Smooth scroll for anchor links.
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
@@ -129,9 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ===================================
-    // SCROLL ANIMATIONS (INTERSECTION OBSERVER)
-    // ===================================
+    // Reveal-on-scroll animations.
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -178,9 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
     
-    // ===================================
-    // SKILL BARS ANIMATION
-    // ===================================
+    // Animate skill bars on scroll.
     const skillBarsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -201,9 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
         skillBarsObserver.observe(section);
     });
     
-    // ===================================
-    // PORTFOLIO FILTERING
-    // ===================================
+    // Portfolio filtering.
     const filterButtons = document.querySelectorAll('.filter-btn');
     const portfolioCards = document.querySelectorAll('.portfolio-card');
     
@@ -228,9 +212,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ===================================
-    // CONTACT FORM HANDLING
-    // ===================================
+    // Prefill the contact subject from service CTA buttons.
+    document.querySelectorAll('[data-subject]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const field = document.getElementById('subject');
+            if (field && !field.value.trim()) {
+                field.value = btn.getAttribute('data-subject');
+            }
+        });
+    });
+
+    // Contact form handling.
     const contactForm = document.getElementById('contactForm');
     
     if (contactForm) {
@@ -274,9 +266,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ===================================
-    // NOTIFICATION SYSTEM
-    // ===================================
+    // Toast notifications.
     function showNotification(message, type = 'info') {
         // Remove existing notification
         const existingNotification = document.querySelector('.notification');
@@ -345,17 +335,13 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(notificationStyles);
     
-    // ===================================
-    // DYNAMIC YEAR IN FOOTER
-    // ===================================
+    // Dynamic footer year.
     const yearElement = document.getElementById('currentYear');
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
     
-    // ===================================
-    // BACK TO TOP BUTTON
-    // ===================================
+    // Back-to-top button.
     const backToTop = document.querySelector('.back-to-top');
     
     if (backToTop) {
@@ -374,9 +360,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, { passive: true });
     }
     
-    // ===================================
-    // TYPING EFFECT FOR HERO (OPTIONAL)
-    // ===================================
+    // Optional hero typing effect.
     const heroSubtitle = document.querySelector('.hero-subtitle');
     if (heroSubtitle) {
         // Add fade-in animation
@@ -384,9 +368,7 @@ document.addEventListener('DOMContentLoaded', function() {
         heroSubtitle.style.animation = 'fadeInUp 0.8s ease-out 0.3s forwards';
     }
     
-    // ===================================
-    // STAT COUNTER ANIMATION
-    // ===================================
+    // Animated stat counters.
     const statNumbers = document.querySelectorAll('.stat-number');
     
     const animateValue = (element, start, end, duration) => {
@@ -422,9 +404,7 @@ document.addEventListener('DOMContentLoaded', function() {
         statsObserver.observe(stat);
     });
     
-    // ===================================
-    // CARD HOVER EFFECTS ENHANCEMENT
-    // ===================================
+    // Card hover lift.
     const cards = document.querySelectorAll('.timeline-card, .portfolio-card, .skill-category');
     
     cards.forEach(card => {
@@ -445,9 +425,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ===================================
-    // PRINT FUNCTIONALITY
-    // ===================================
+    // Print support.
     // Add keyboard shortcut for print (Ctrl/Cmd + P)
     document.addEventListener('keydown', (e) => {
         if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
@@ -455,10 +433,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // ===================================
-    // PERFORMANCE OPTIMIZATION
-    // ===================================
-    // Lazy load images
+    // Lazy-load images for performance.
     const images = document.querySelectorAll('img');
     images.forEach(img => {
         if (img.loading === undefined) {
@@ -467,16 +442,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // ===================================
-    // CONSOLE WELCOME MESSAGE
-    // ===================================
+    // Console welcome message.
     console.log('%c👋 Welcome to Brandon Hinrichs Portfolio!', 'font-size: 20px; font-weight: bold; color: #3b82f6;');
     console.log('%cBuilt with modern web technologies and a focus on user experience.', 'font-size: 12px; color: #64748b;');
     console.log('%cInterested in the code? Check out the GitHub repository!', 'font-size: 12px; color: #64748b;');
     
-    // ===================================
-    // PAGE LOAD ANIMATION
-    // ===================================
+    // Page load fade-in.
     document.body.style.opacity = '0';
     document.body.style.transition = 'opacity 0.5s ease-out';
     

@@ -195,7 +195,7 @@ a:hover {
     transition: all var(--transition-base);
 }
 
-/* Navbar sits over the dark hero — use white text until scrolled */
+/* Navbar sits over the dark hero: white text until scrolled. */
 .navbar:not(.scrolled) .navbar-brand,
 .navbar:not(.scrolled) .navbar-link,
 .navbar:not(.scrolled) .navbar-toggle span {
@@ -344,7 +344,7 @@ a:hover {
     position: relative;
     overflow: hidden;
     padding-top: 80px;
-    /* Hero always has a dark gradient background — all text must be white */
+    /* Hero keeps its dark gradient background, so all text stays white. */
     color: white;
 }
 
@@ -1520,5 +1520,28 @@ a:hover {
     a {
         color: black;
         text-decoration: underline;
+    }
+}
+
+/* Accessibility additions: visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #2C7A7B;
+    outline-offset: 2px;
+}
+
+/* Accessibility: check-list icons meet 3:1 non-text contrast on light surfaces */
+.skill-category .fa-check {
+    color: #0B7A55 !important;
+}
+
+/* Accessibility: honor reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
     }
 }
