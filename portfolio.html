@@ -57,28 +57,31 @@
                 <span>Featured Work</span>
             </div>
             <h1 class="hero-title" style="margin-bottom: 20px;">
-                Client <span>Portfolio</span>
+                Client & Grant <span>Portfolio</span>
             </h1>
             <p class="hero-subtitle" style="max-width: 700px; margin: 0 auto;">
-                Showcasing digital solutions, web development projects, and consulting services 
+                Showcasing grant writing case studies, digital solutions, and nonprofit consulting 
                 delivered through Hinrichs Specialty Services
             </p>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio section">
+    <section class="portfolio section" id="portfolio">
         <div class="container">
             <!-- Filter Buttons -->
             <div class="portfolio-filters">
                 <button class="filter-btn active" data-filter="all">
                     <i class="fas fa-th"></i> All Projects
                 </button>
-                <button class="filter-btn" data-filter="web-dev">
-                    <i class="fas fa-code"></i> Web Development
+                <button class="filter-btn" data-filter="grants">
+                    <i class="fas fa-file-invoice-dollar"></i> Grant Proposals & Case Studies
                 </button>
                 <button class="filter-btn" data-filter="nonprofit">
                     <i class="fas fa-heart"></i> Nonprofit
+                </button>
+                <button class="filter-btn" data-filter="web-dev">
+                    <i class="fas fa-code"></i> Web Development
                 </button>
                 <button class="filter-btn" data-filter="healthcare">
                     <i class="fas fa-clinic-medical"></i> Healthcare
@@ -87,9 +90,198 @@
                     <i class="fas fa-store"></i> Small Business
                 </button>
             </div>
+
+            <!-- Grant Portfolio Redaction Notice -->
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-left: 4px solid var(--primary-500); padding: 20px 24px; border-radius: var(--radius-md); margin-bottom: 30px; display: flex; flex-direction: column; gap: 14px;">
+                <div style="display: flex; align-items: flex-start; gap: 16px;">
+                    <i class="fas fa-shield-alt" style="color: var(--primary-500); font-size: 1.4rem; margin-top: 2px;"></i>
+                    <div style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5;">
+                        <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Redacted Grant Writing Samples & Case Studies</strong>
+                        Real-world grant applications, LOIs, and federal planning frameworks authored for rural human services and nonprofits. All proprietary participant data, agency details, and confidential financials have been sanitized in accordance with federal and state privacy standards.
+                    </div>
+                </div>
+                <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-left: 36px;">
+                    <a href="docs/Brandon_Hinrichs_Master_Grant_Resume.pdf" target="_blank" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">
+                        <i class="fas fa-file-pdf"></i> Download Master Grant Resume (PDF)
+                    </a>
+                    <a href="docs/grants/README_PORTFOLIO_OVERVIEW.pdf" target="_blank" class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.85rem;">
+                        <i class="fas fa-book-open"></i> Portfolio Overview & Protocol (PDF)
+                    </a>
+                </div>
+            </div>
             
             <!-- Portfolio Grid -->
             <div class="portfolio-grid">
+                <!-- Portfolio Overview & Ethics -->
+                <div class="portfolio-card" data-category="grants nonprofit">
+                    <div class="portfolio-card-image" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
+                        <i class="fas fa-book-open"></i>
+                        <div class="portfolio-card-overlay">
+                            <a href="docs/grants/README_PORTFOLIO_OVERVIEW.pdf" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-file-pdf"></i>
+                                View Protocol
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="portfolio-card-category">Portfolio Overview • Protocol</span>
+                        <h3 class="portfolio-card-title">Grant Portfolio & Ethics Protocol</h3>
+                        <p class="portfolio-card-description">
+                            Master index, competencies matrix, and data-protection protocols governing published samples. Outlines federal de-identification standards and core writing methodologies.
+                        </p>
+                        <div class="portfolio-card-tags">
+                            <span class="portfolio-card-tag">Ethics & Privacy</span>
+                            <span class="portfolio-card-tag">Federal Standards</span>
+                            <span class="portfolio-card-tag">Competencies</span>
+                            <span class="portfolio-card-tag">Index</span>
+                        </div>
+                        <div style="display: flex; gap: 14px; margin-top: 16px;">
+                            <a href="docs/grants/README_PORTFOLIO_OVERVIEW.pdf" target="_blank" class="portfolio-card-link">
+                                View PDF <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="docs/grants/README_PORTFOLIO_OVERVIEW.docx" download class="portfolio-card-link" style="color: var(--text-secondary);">
+                                DOCX <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AmeriCorps Formula Planning Grant -->
+                <div class="portfolio-card" data-category="grants nonprofit">
+                    <div class="portfolio-card-image" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
+                        <i class="fas fa-landmark"></i>
+                        <div class="portfolio-card-overlay">
+                            <a href="docs/grants/Grant_01_Federal_State_AmeriCorps_Planning_Grant_Redacted.pdf" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-file-pdf"></i>
+                                View Proposal
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="portfolio-card-category">Federal / State Grant • $75,000</span>
+                        <h3 class="portfolio-card-title">AmeriCorps Planning Grant</h3>
+                        <p class="portfolio-card-description">
+                            Formula planning application for rural youth development. Demonstrates community needs assessment, 12-month milestone timeline, logic model, and matching budget narrative.
+                        </p>
+                        <div class="portfolio-card-tags">
+                            <span class="portfolio-card-tag">AmeriCorps</span>
+                            <span class="portfolio-card-tag">Formula Planning</span>
+                            <span class="portfolio-card-tag">Needs Assessment</span>
+                            <span class="portfolio-card-tag">Logic Model</span>
+                            <span class="portfolio-card-tag">Budget</span>
+                        </div>
+                        <div style="display: flex; gap: 14px; margin-top: 16px;">
+                            <a href="docs/grants/Grant_01_Federal_State_AmeriCorps_Planning_Grant_Redacted.pdf" target="_blank" class="portfolio-card-link">
+                                View PDF <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="docs/grants/Grant_01_Federal_State_AmeriCorps_Planning_Grant_Redacted.docx" download class="portfolio-card-link" style="color: var(--text-secondary);">
+                                DOCX <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Archer Charitable Foundation Proposal -->
+                <div class="portfolio-card" data-category="grants nonprofit">
+                    <div class="portfolio-card-image" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+                        <i class="fas fa-hands-helping"></i>
+                        <div class="portfolio-card-overlay">
+                            <a href="docs/grants/Grant_02_Private_Foundation_Family_Preservation_Proposal_Redacted.pdf" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-file-pdf"></i>
+                                View Proposal
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="portfolio-card-category">Private Foundation • $50,000</span>
+                        <h3 class="portfolio-card-title">Family Preservation Proposal</h3>
+                        <p class="portfolio-card-description">
+                            Archer Charitable Foundation proposal for rural family preservation. Demonstrates the "Do With, Not For" empowerment model, bilingual access barriers, and program outcome metrics.
+                        </p>
+                        <div class="portfolio-card-tags">
+                            <span class="portfolio-card-tag">Private Foundation</span>
+                            <span class="portfolio-card-tag">Family Preservation</span>
+                            <span class="portfolio-card-tag">Bilingual Services</span>
+                            <span class="portfolio-card-tag">Outcome Metrics</span>
+                        </div>
+                        <div style="display: flex; gap: 14px; margin-top: 16px;">
+                            <a href="docs/grants/Grant_02_Private_Foundation_Family_Preservation_Proposal_Redacted.pdf" target="_blank" class="portfolio-card-link">
+                                View PDF <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="docs/grants/Grant_02_Private_Foundation_Family_Preservation_Proposal_Redacted.docx" download class="portfolio-card-link" style="color: var(--text-secondary);">
+                                DOCX <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DanPaul Foundation LOI -->
+                <div class="portfolio-card" data-category="grants nonprofit">
+                    <div class="portfolio-card-image" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%);">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <div class="portfolio-card-overlay">
+                            <a href="docs/grants/Grant_03_Foundation_LOI_Transitional_Youth_Housing_Redacted.pdf" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-file-pdf"></i>
+                                View LOI
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="portfolio-card-category">Foundation LOI • $15,000</span>
+                        <h3 class="portfolio-card-title">Transitional Youth Housing LOI</h3>
+                        <p class="portfolio-card-description">
+                            DanPaul Foundation rapid 2-page letter of inquiry addressing the housing cliff for young adults aging out of foster care, with direct participant cost allocations.
+                        </p>
+                        <div class="portfolio-card-tags">
+                            <span class="portfolio-card-tag">Letter of Inquiry</span>
+                            <span class="portfolio-card-tag">Transitional Youth</span>
+                            <span class="portfolio-card-tag">Housing Cliff</span>
+                            <span class="portfolio-card-tag">Direct Support</span>
+                        </div>
+                        <div style="display: flex; gap: 14px; margin-top: 16px;">
+                            <a href="docs/grants/Grant_03_Foundation_LOI_Transitional_Youth_Housing_Redacted.pdf" target="_blank" class="portfolio-card-link">
+                                View PDF <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="docs/grants/Grant_03_Foundation_LOI_Transitional_Youth_Housing_Redacted.docx" download class="portfolio-card-link" style="color: var(--text-secondary);">
+                                DOCX <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Federal HUD / CoC Framework -->
+                <div class="portfolio-card" data-category="grants nonprofit">
+                    <div class="portfolio-card-image" style="background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);">
+                        <i class="fas fa-building-columns"></i>
+                        <div class="portfolio-card-overlay">
+                            <a href="docs/grants/Grant_04_Federal_HUD_CoC_Youth_Homelessness_Demonstration_Redacted.pdf" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-file-pdf"></i>
+                                View Framework
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-body">
+                        <span class="portfolio-card-category">Federal HUD / CoC • $250,000+</span>
+                        <h3 class="portfolio-card-title">HUD Youth Homelessness Framework</h3>
+                        <p class="portfolio-card-description">
+                            Federal collaborative application framework demonstrating Transitional Housing to Rapid Re-Housing (TH-RRH) hybrid design, low-barrier coordinated entry, and multi-agency governance.
+                        </p>
+                        <div class="portfolio-card-tags">
+                            <span class="portfolio-card-tag">Federal HUD</span>
+                            <span class="portfolio-card-tag">Continuum of Care</span>
+                            <span class="portfolio-card-tag">TH-RRH Model</span>
+                            <span class="portfolio-card-tag">Coordinated Entry</span>
+                        </div>
+                        <div style="display: flex; gap: 14px; margin-top: 16px;">
+                            <a href="docs/grants/Grant_04_Federal_HUD_CoC_Youth_Homelessness_Demonstration_Redacted.pdf" target="_blank" class="portfolio-card-link">
+                                View PDF <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="docs/grants/Grant_04_Federal_HUD_CoC_Youth_Homelessness_Demonstration_Redacted.docx" download class="portfolio-card-link" style="color: var(--text-secondary);">
+                                DOCX <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <!-- The Next Right Step -->
                 <div class="portfolio-card" data-category="nonprofit web-dev">
                     <div class="portfolio-card-image" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">

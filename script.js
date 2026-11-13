@@ -212,6 +212,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Check if URL hash specifies a filter (e.g. portfolio.html#grants)
+    function applyHashFilter() {
+        const hash = window.location.hash.replace('#', '').toLowerCase();
+        if (hash) {
+            const matchingBtn = document.querySelector(`.filter-btn[data-filter="${hash}"]`);
+            if (matchingBtn) {
+                matchingBtn.click();
+                const portfolioSection = document.getElementById('portfolio');
+                if (portfolioSection) {
+                    setTimeout(() => {
+                        portfolioSection.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                }
+            }
+        }
+    }
+    applyHashFilter();
+    window.addEventListener('hashchange', applyHashFilter);
+    
     // Prefill the contact subject from service CTA buttons.
     document.querySelectorAll('[data-subject]').forEach(function(btn) {
         btn.addEventListener('click', function() {
